@@ -1,7 +1,7 @@
 # Projeto PI
 ## **Readme em teste...**
 
-![logo Senac](logoSenac.png)
+![logo Senac](img/logoSenac.png)
 
 
 # SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL (SENAC)
@@ -51,8 +51,8 @@
  ## 4. Modelo de Persistência de Dados Orientada a Objetos:
 #### 1. Diagrama de Classes UML
    
-   ![UML](UML.png)
+   ![UML](img/UML.png)
 
 #### 2. Descrição textual das classes, atributos, método, relacionamento e outros.
 
-![Descrição](Descrição.png)
+![Descrição](img/Descrição.png)
