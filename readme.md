@@ -1,8 +1,7 @@
 # Projeto PI
 ## **Readme em teste...**
 
-![logo Senac](img/logoSenac.png)
-
+<img><img src="img/logoSenac.png" alt="Logo" width="350"/>
 
 # SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL (SENAC)
 ## CURSO DE TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
