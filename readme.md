@@ -1,58 +1,58 @@
 # Projeto PI
-### Readme em teste...
+## **Readme em teste...**
 
-![alt text](image.png)
-
-
+![logo Senac](logoSenac.png)
 
 
-PROJETO INTEGRADOR II: DESENVOLVIMENTO DE SISTEMAS
-ORIENTADO A OBJETOS
+# SERVIÇO NACIONAL DE APRENDIZAGEM COMERCIAL (SENAC)
+## CURSO DE TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+### PROJETO INTEGRADOR II: DESENVOLVIMENTO DE SISTEMAS ORIENTADO A OBJETOS
 
+**Integrantes do grupo:**
+- Filipe André da Fonseca Simões
+- Vinícius Guedes de Barros
+- Pablo Henrique Gomes Barbosa
+- Vitor Hugo Santana Benevides
+- Renata Vieira Gonçalves
+- Marcelo Pazetti
 
-Integrantes do grupo:
+**TRABALHO PARA APROVAÇÃO EM DISCIPLINA** EAD - ENSINO À DISTÂNCIA - 2024
 
-Filipe André da Fonseca Simões
+**Resumo**
 
-Vinícius Guedes de Barros
+> O protótipo a seguir, tem como objetivo estruturar o processo da modelagem de um projeto voltado à gestão de dados de um centro universitário. Tendo o foco no conforto da rápida manuseabilidade, manutenção e aprendizado tanto do corpo docente, quanto dos alunos envolvidos neste sistema.
 
-Pablo Henrique Gomes Barbosa
+**Lista de Ilustrações**
+1. Modelo de Persistência de Dados Orientada a Objetos
+    1. Diagrama de Classes UML
+    2. Descrição textual das classes, atributos, método, relacionamentos e outros
 
-Vitor Hugo Santana Benevides
+**Sumário**
+1. Visão Geral da Proposta
+    1. Contextualização e motivação
+    2. Objetivos
+2. Planejamento para o desenvolvimento da solução proposta
+    1. Ciclo de vida de desenvolvimento
+    2. Premissas
+    3. Requisitos / Histórias do usuário
+    4. Planejamento
+3. Protótipo funcional e experimentos de usabilidade
+    1. Protótipo funcional com interface humano-computador
+    2. Experimento de usabilidade
+4. Modelo de Persistência de Dados Orientada a Objetos
+    1. Diagrama de Classes UML
+    2. Descrição textual das classes, atributos, método, relacionamentos e outros
+        - Pessoa Física
+        - Pessoa Jurídica
+        - Professores
+        - Fornecedores
+    3. Proposta de implementação
+   
+ ## 4. Modelo de Persistência de Dados Orientada a Objetos:
+#### 1. Diagrama de Classes UML
+   
+   ![UML](UML.png)
 
-Renata Vieira Gonçalves
+#### 2. Descrição textual das classes, atributos, método, relacionamento e outros.
 
-Marcelo Pazetti
-
-
-Resumo
-O protótipo a seguir, tem como objetivo estruturar o processo da modelagem de um
-projeto voltado à gestão de dados de um centro universitário. Tendo o foco no conforto da
-rápida manuseabilidade, manutenção e aprendizado tanto do corpo docente, quanto dos
-alunos envolvidos neste sistema.
-Lista de Ilustrações
-4. Modelo de Persistência de Dados Orientada a Objetos:................................................4
-4.1. Diagrama de Classes UML......................................................................................... 4
-Tabela - Diagrama de Classes UML.......................................................................5
-4.2. Descrição textual das classes, atributos, método, relacionamentos e outros.............6
-Tabela - Diagrama dos Casos de Uso....................................................................6
-Sumário
-1. Visão Geral da Proposta....................................................................................................3
-1.1. Contextualização e motivação.................................................................................... 3
-1.2. Objetivos..................................................................................................................... 3
-2. Planejamento para o desenvolvimento da solução proposta:...................................... 3
-2.1. Ciclo de vida de desenvolvimento...............................................................................3
-2.2. Premissas....................................................................................................................3
-2.3. Requisitos / Histórias do usuário.................................................................................3
-2.4. Planejamento.............................................................................................................. 3
-3. Protótipo funcional e experimentos de usabilidade.......................................................3
-3.1. Protótipo funcional com interface humano-computador..............................................4
-3.2. Experimento de usabilidade........................................................................................4
-4. Modelo de Persistência de Dados Orientada a Objetos:................................................4
-4.1. Diagrama de Classes UML......................................................................................... 4
-4.2. Descrição textual das classes, atributos, método, relacionamentos e outros.............4
-Pessoa Física...............................................................................................................5
-Pessoa Jurídica............................................................................................................6
-Professores.................................................................................................................. 6
-Fornecedores............................................................................................................... 7
-4.3. Proposta de implementação........................................................................................8
+![Descrição](Descrição.png)
