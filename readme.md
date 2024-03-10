@@ -60,3 +60,15 @@
 #### 5.1. Tela Pessoa Jurídica
 Essa tela permite o **registro/criação** de um novo usuário no sistema, **acesso** ao curso e **recuperação de senha**.
 ![TelaPrototipo](img/landingpage-pessoa_juridica.jpg)        
+#### 5.2. Tela Pessoa Física
+Essa tela permite o **registro/criação** de um novo usuário no sistema, **acesso ao conteúdo disponível** e **acesso ao conteúdo PRO**.
+![TelaPrototipo](img/landingpage-pessoa_fisica.jpg) 
+#### 5.3. Tela Fornecedores
+Essa tela permite o **registro/criação** de um novo usuário no sistema, **envio de orçamento**, **login** e **nova proposta**.
+![TelaPrototipo](img/landingpage-fornecedores.jpg) 
+#### 5.4. Tela Professores
+Essa tela permite o **registro/criação** de um novo usuário no sistema, **validação**, **login** e **novo cadastro**.
+![TelaPrototipo](img/landingpage-professores.jpg) 
+#### 5.4. Tela Alunos
+Essa tela permite o **registro/criação** de um novo usuário no sistema, **acesso ao AVA**, **login** e **status financeiro**.
+![TelaPrototipo](img/landingpage-alunos.jpg) 
