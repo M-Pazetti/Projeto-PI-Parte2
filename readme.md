@@ -55,3 +55,5 @@
 #### 2. Descrição textual das classes, atributos, método, relacionamento e outros.
 
 ![Descrição](img/Descrição.png)
+
+![Descrição](img/landingpage-pessoa_juridica.jpg)        
