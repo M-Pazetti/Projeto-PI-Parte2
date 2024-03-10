@@ -56,4 +56,7 @@
 
 ![Descrição](img/Descrição.png)
 
-![Descrição](img/landingpage-pessoa_juridica.jpg)        
+ ## 5. Telas do Protótipo do Sistema:
+#### 5.1. Tela Pessoa Jurídica
+Essa tela permite o **registro/criação** de um novo usuário no sistema, **acesso** ao curso e **recuperação de senha**.
+![TelaPrototipo](img/landingpage-pessoa_juridica.jpg)        
