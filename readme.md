@@ -1,5 +1,4 @@
 # Projeto PI
-## **Readme em teste...**
 
 <img><img src="img/logoSenac.png" alt="Logo" width="350"/>
 
