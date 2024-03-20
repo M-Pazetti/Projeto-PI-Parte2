@@ -45,6 +45,12 @@
         - Professores
         - Fornecedores
     3. Proposta de implementação
+  5. Telas do Protótipo do Sistema
+     1. Tela Pessoa Jurídica
+     2. Tela Pessoa Física
+     3. Tela Fornecedores
+     4. Tela Professores
+     5. Tela Alunos 
    
  ## 4. Modelo de Persistência de Dados Orientada a Objetos:
 #### 1. Diagrama de Classes UML
