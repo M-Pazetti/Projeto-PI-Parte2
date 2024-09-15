@@ -3,195 +3,210 @@ document.addEventListener('DOMContentLoaded', function() {
     let totalCaloriesBurned = 0;
 
     const alimentos = [
-        { nome: 'Arroz branco', calorias: 130 },
-        { nome: 'Feijão preto', calorias: 91 },
-        { nome: 'Banana', calorias: 89 },
-        { nome: 'Maçã', calorias: 52 },
-        { nome: 'Pão integral', calorias: 252 },
-        { nome: 'Batata doce', calorias: 86 },
-        { nome: 'Frango grelhado', calorias: 165 },
-        { nome: 'Carne bovina', calorias: 250 },
-        { nome: 'Peixe (salmão)', calorias: 206 },
-        { nome: 'Ovo cozido', calorias: 155 },
-        { nome: 'Leite integral', calorias: 61 },
-        { nome: 'Queijo mussarela', calorias: 280 },
-        { nome: 'Iogurte natural', calorias: 61 },
-        { nome: 'Brócolis', calorias: 34 },
-        { nome: 'Cenoura', calorias: 41 },
-        { nome: 'Tomate', calorias: 18 },
-        { nome: 'Alface', calorias: 15 },
-        { nome: 'Espinafre', calorias: 23 },
-        { nome: 'Pão francês', calorias: 268 },
-        { nome: 'Laranja', calorias: 47 },
-        { nome: 'Manga', calorias: 60 },
-        { nome: 'Melancia', calorias: 30 },
-        { nome: 'Abacate', calorias: 160 },
-        { nome: 'Morango', calorias: 32 },
-        { nome: 'Amêndoas', calorias: 576 },
-        { nome: 'Nozes', calorias: 654 },
-        { nome: 'Avelãs', calorias: 628 },
-        { nome: 'Castanha de caju', calorias: 553 },
-        { nome: 'Pistache', calorias: 562 },
-        { nome: 'Azeitona preta', calorias: 115 },
-        { nome: 'Coco', calorias: 354 },
-        { nome: 'Lentilha', calorias: 116 },
-        { nome: 'Grão-de-bico', calorias: 164 },
-        { nome: 'Quinoa', calorias: 120 },
-        { nome: 'Aveia', calorias: 389 },
-        { nome: 'Granola', calorias: 471 },
-        { nome: 'Mel', calorias: 304 },
-        { nome: 'Cereal matinal', calorias: 379 },
-        { nome: 'Biscoito de água e sal', calorias: 430 },
-        { nome: 'Macarrão cozido', calorias: 131 },
-        { nome: 'Pizza de mussarela', calorias: 266 },
-        { nome: 'Coxinha de frango', calorias: 282 },
-        { nome: 'Pastel de queijo', calorias: 333 },
-        { nome: 'Pão de queijo', calorias: 356 },
-        { nome: 'Suco de laranja', calorias: 45 },
-        { nome: 'Refrigerante', calorias: 42 },
-        { nome: 'Chocolate ao leite', calorias: 546 },
-        { nome: 'Sorvete de creme', calorias: 207 },
-        { nome: 'Hambúrguer', calorias: 295 },
-        { nome: 'Hot dog', calorias: 289 }
+        { nome: 'Arroz branco', caloriasPor100g: 130 },
+        { nome: 'Feijão preto', caloriasPor100g: 91 },
+        { nome: 'Banana', caloriasPor100g: 89 },
+        { nome: 'Maçã', caloriasPor100g: 52 },
+        { nome: 'Pão integral', caloriasPor100g: 252 },
+        { nome: 'Batata doce', caloriasPor100g: 86 },
+        { nome: 'Frango grelhado', caloriasPor100g: 165 },
+        { nome: 'Carne bovina', caloriasPor100g: 250 },
+        { nome: 'Peixe (salmão)', caloriasPor100g: 206 },
+        { nome: 'Ovo cozido', caloriasPor100g: 155 },
+        { nome: 'Leite integral', caloriasPor100g: 61 },
+        { nome: 'Queijo mussarela', caloriasPor100g: 280 },
+        { nome: 'Iogurte natural', caloriasPor100g: 61 },
+        { nome: 'Brócolis', caloriasPor100g: 34 },
+        { nome: 'Cenoura', caloriasPor100g: 41 },
+        { nome: 'Tomate', caloriasPor100g: 18 },
+        { nome: 'Alface', caloriasPor100g: 15 },
+        { nome: 'Espinafre', caloriasPor100g: 23 },
+        { nome: 'Pão francês', caloriasPor100g: 268 },
+        { nome: 'Laranja', caloriasPor100g: 47 },
+        { nome: 'Manga', caloriasPor100g: 60 },
+        { nome: 'Melancia', caloriasPor100g: 30 },
+        { nome: 'Abacate', caloriasPor100g: 160 },
+        { nome: 'Morango', caloriasPor100g: 32 },
+        { nome: 'Amêndoas', caloriasPor100g: 576 },
+        { nome: 'Nozes', caloriasPor100g: 654 },
+        { nome: 'Avelãs', caloriasPor100g: 628 },
+        { nome: 'Castanha de caju', caloriasPor100g: 553 },
+        { nome: 'Pistache', caloriasPor100g: 562 },
+        { nome: 'Azeitona preta', caloriasPor100g: 115 },
+        { nome: 'Coco', caloriasPor100g: 354 },
+        { nome: 'Lentilha', caloriasPor100g: 116 },
+        { nome: 'Grão-de-bico', caloriasPor100g: 164 },
+        { nome: 'Quinoa', caloriasPor100g: 120 },
+        { nome: 'Aveia', caloriasPor100g: 389 },
+        { nome: 'Granola', caloriasPor100g: 471 },
+        { nome: 'Mel', caloriasPor100g: 304 },
+        { nome: 'Cereal matinal', caloriasPor100g: 379 },
+        { nome: 'Biscoito de água e sal', caloriasPor100g: 430 },
+        { nome: 'Macarrão cozido', caloriasPor100g: 131 },
+        { nome: 'Pizza de mussarela', caloriasPor100g: 266 },
+        { nome: 'Coxinha de frango', caloriasPor100g: 282 },
+        { nome: 'Pastel de queijo', caloriasPor100g: 333 },
+        { nome: 'Pão de queijo', caloriasPor100g: 290 },
+        { nome: 'Torta de frango', caloriasPor100g: 251 },
+        { nome: 'Empada de camarão', caloriasPor100g: 270 }
     ];
 
     const exercicios = [
-        { nome: 'Caminhada leve', calorias: 210 },
-        { nome: 'Caminhada rápida', calorias: 330 },
-        { nome: 'Corrida (8 km/h)', calorias: 480 },
-        { nome: 'Corrida (10 km/h)', calorias: 600 },
-        { nome: 'Corrida (12 km/h)', calorias: 720 },
-        { nome: 'Natação (leve)', calorias: 400 },
-        { nome: 'Natação (moderada)', calorias: 600 },
-        { nome: 'Ciclismo (leve)', calorias: 280 },
-        { nome: 'Ciclismo (moderado)', calorias: 560 },
-        { nome: 'Ciclismo (intenso)', calorias: 840 },
-        { nome: 'Yoga', calorias: 240 },
-        { nome: 'Pilates', calorias: 300 },
-        { nome: 'Dança (leve)', calorias: 210 },
-        { nome: 'Dança (moderada)', calorias: 330 },
-        { nome: 'Dança (intensa)', calorias: 450 },
-        { nome: 'Musculação (leve)', calorias: 240 },
-        { nome: 'Musculação (moderada)', calorias: 360 },
-        { nome: 'Musculação (intensa)', calorias: 480 },
-        { nome: 'Boxe (leve)', calorias: 350 },
-        { nome: 'Boxe (moderado)', calorias: 525 },
-        { nome: 'Boxe (intenso)', calorias: 700 },
-        { nome: 'Pular corda (leve)', calorias: 480 },
-        { nome: 'Pular corda (moderado)', calorias: 600 },
-        { nome: 'Pular corda (intenso)', calorias: 720 },
-        { nome: 'Hidroginástica', calorias: 300 },
-        { nome: 'Remo (leve)', calorias: 280 },
-        { nome: 'Remo (moderado)', calorias: 560 },
-        { nome: 'Remo (intenso)', calorias: 840 },
-        { nome: 'Escalada', calorias: 720 },
-        { nome: 'Futebol (recreativo)', calorias: 420 },
-        { nome: 'Futebol (competitivo)', calorias: 630 },
-        { nome: 'Basquete (recreativo)', calorias: 420 },
-        { nome: 'Basquete (competitivo)', calorias: 630 },
-        { nome: 'Vôlei (recreativo)', calorias: 210 },
-        { nome: 'Vôlei (competitivo)', calorias: 315 },
-        { nome: 'Tênis', calorias: 420 },
-        { nome: 'Badminton', calorias: 300 },
-        { nome: 'Esqui', calorias: 600 },
-        { nome: 'Patinação', calorias: 420 },
-        { nome: 'Subir escadas', calorias: 600 },
-        { nome: 'Caminhada em trilha', calorias: 420 }
+        { nome: 'Caminhada leve', caloriasPorMinuto: 5 },
+        { nome: 'Corrida', caloriasPorMinuto: 10 },
+        { nome: 'Natação', caloriasPorMinuto: 8.33 },
+        { nome: 'Ciclismo', caloriasPorMinuto: 6.67 },
+        { nome: 'Musculação', caloriasPorMinuto: 8.33 },
+        { nome: 'Ioga', caloriasPorMinuto: 6.67 },
+        { nome: 'Dança', caloriasPorMinuto: 6.67 },
+        { nome: 'Pular corda', caloriasPorMinuto: 10 },
+        { nome: 'Aula de spinning', caloriasPorMinuto: 11.67 },
+        { nome: 'Pilates', caloriasPorMinuto: 6.67 },
+        { nome: 'Boxe', caloriasPorMinuto: 11.67 },
+        { nome: 'Treinamento HIIT', caloriasPorMinuto: 13.33 },
+        { nome: 'Caminhada moderada', caloriasPorMinuto: 6.67 },
+        { nome: 'Subida de escadas', caloriasPorMinuto: 8.33 },
+        { nome: 'Escalada', caloriasPorMinuto: 10 },
+        { nome: 'Artes marciais', caloriasPorMinuto: 11.67 },
+        { nome: 'Hidroginástica', caloriasPorMinuto: 8.33 },
+        { nome: 'Jiu-jitsu', caloriasPorMinuto: 10 },
+        { nome: 'Futebol', caloriasPorMinuto: 10 },
+        { nome: 'Basquete', caloriasPorMinuto: 10 },
+        { nome: 'Tênis', caloriasPorMinuto: 10 },
+        { nome: 'Vôlei', caloriasPorMinuto: 8.33 }
     ];
 
-    const imcForm = document.getElementById('imc-form');
-    const resultSpan = document.getElementById('result');
-    const categoryParagraph = document.getElementById('category');
-    const foodSelect = document.getElementById('food');
-    const exerciseSelect = document.getElementById('exercise');
-    const foodList = document.getElementById('food-list');
-    const exerciseList = document.getElementById('exercise-list');
-    const caloriesIngestedTodaySpan = document.getElementById('calories-ingested-today');
-    const caloriesBurnedTodaySpan = document.getElementById('calories-burned-today');
-    const caloriesBalanceTodaySpan = document.getElementById('calories-balance-today');
+    function updateFoodOptions() {
+        const foodSelect = document.getElementById('food');
+        foodSelect.innerHTML = '<option value="">Selecione um alimento</option>';
+        alimentos.forEach(alimento => {
+            const option = document.createElement('option');
+            option.value = alimento.nome;
+            option.textContent = alimento.nome;
+            foodSelect.appendChild(option);
+        });
+    }
+
+    function updateExerciseOptions() {
+        const exerciseSelect = document.getElementById('exercise');
+        exerciseSelect.innerHTML = '<option value="">Selecione um exercício</option>';
+        exercicios.forEach(exercicio => {
+            const option = document.createElement('option');
+            option.value = exercicio.nome;
+            option.textContent = exercicio.nome;
+            exerciseSelect.appendChild(option);
+        });
+    }
+
+    function addFood() {
+        const foodSelect = document.getElementById('food');
+        const quantityInput = document.getElementById('food-quantity');
+        const foodList = document.getElementById('food-list');
+
+        const selectedFood = foodSelect.value;
+        const quantity = parseFloat(quantityInput.value);
+
+        if (selectedFood && quantity) {
+            const alimento = alimentos.find(a => a.nome === selectedFood);
+            const calories = (alimento.caloriasPor100g * quantity) / 100;
+            totalCaloriesIngested += calories;
+
+            const listItem = document.createElement('div');
+            listItem.className = 'list-item';
+            listItem.innerHTML = `
+                <span>${selectedFood} - ${quantity}g</span>
+                <span>${calories.toFixed(2)} calorias</span>
+                <button class="remove-food">Remover</button>
+            `;
+            foodList.appendChild(listItem);
+
+            updateCaloriesSummary();
+        }
+    }
+
+    function removeFood(event) {
+        if (event.target.classList.contains('remove-food')) {
+            const item = event.target.parentElement;
+            const calories = parseFloat(item.querySelector('span:nth-child(2)').textContent);
+            totalCaloriesIngested -= calories;
+
+            item.remove();
+            updateCaloriesSummary();
+        }
+    }
+
+    function addExercise() {
+        const exerciseSelect = document.getElementById('exercise');
+        const timeInput = document.getElementById('exercise-time');
+        const exerciseList = document.getElementById('exercise-list');
+
+        const selectedExercise = exerciseSelect.value;
+        const time = parseFloat(timeInput.value);
+
+        if (selectedExercise && time) {
+            const exercicio = exercicios.find(e => e.nome === selectedExercise);
+            const calories = exercicio.caloriasPorMinuto * time;
+            totalCaloriesBurned += calories;
+
+            const listItem = document.createElement('div');
+            listItem.className = 'list-item';
+            listItem.innerHTML = `
+                <span>${selectedExercise} - ${time} minutos</span>
+                <span>${calories.toFixed(2)} calorias</span>
+                <button class="remove-exercise">Remover</button>
+            `;
+            exerciseList.appendChild(listItem);
+
+            updateCaloriesSummary();
+        }
+    }
+
+    function removeExercise(event) {
+        if (event.target.classList.contains('remove-exercise')) {
+            const item = event.target.parentElement;
+            const calories = parseFloat(item.querySelector('span:nth-child(2)').textContent);
+            totalCaloriesBurned -= calories;
+
+            item.remove();
+            updateCaloriesSummary();
+        }
+    }
 
     function updateCaloriesSummary() {
-        const caloriesBalance = totalCaloriesIngested - totalCaloriesBurned;
-        caloriesIngestedTodaySpan.textContent = totalCaloriesIngested;
-        caloriesBurnedTodaySpan.textContent = totalCaloriesBurned;
-        caloriesBalanceTodaySpan.textContent = caloriesBalance;
+        const balance = totalCaloriesIngested - totalCaloriesBurned;
+        document.getElementById('calories-ingested-today').textContent = totalCaloriesIngested.toFixed(2);
+        document.getElementById('calories-burned-today').textContent = totalCaloriesBurned.toFixed(2);
+        document.getElementById('calories-balance-today').textContent = balance.toFixed(2);
     }
 
-    function createFoodOption(food) {
-        const option = document.createElement('option');
-        option.value = food.calorias;
-        option.textContent = `${food.nome} - ${food.calorias} calorias`;
-        return option;
-    }
+    document.getElementById('add-food').addEventListener('click', addFood);
+    document.getElementById('food-list').addEventListener('click', removeFood);
+    document.getElementById('add-exercise').addEventListener('click', addExercise);
+    document.getElementById('exercise-list').addEventListener('click', removeExercise);
 
-    function createExerciseOption(exercise) {
-        const option = document.createElement('option');
-        option.value = exercise.calorias;
-        option.textContent = `${exercise.nome} - Queima ${exercise.calorias} calorias`;
-        return option;
-    }
-
-    function addFoodToList() {
-        const selectedFood = foodSelect.options[foodSelect.selectedIndex];
-        const listItem = document.createElement('li');
-        listItem.textContent = selectedFood.textContent;
-        foodList.appendChild(listItem);
-
-        const foodCalories = parseInt(selectedFood.value);
-        totalCaloriesIngested += foodCalories;
-
-        updateCaloriesSummary();
-    }
-
-    function addExerciseToList() {
-        const selectedExercise = exerciseSelect.options[exerciseSelect.selectedIndex];
-        const listItem = document.createElement('li');
-        listItem.textContent = selectedExercise.textContent;
-        exerciseList.appendChild(listItem);
-
-        const exerciseCalories = parseInt(selectedExercise.value);
-        totalCaloriesBurned += exerciseCalories;
-
-        updateCaloriesSummary();
-    }
-
-    alimentos.forEach(function(food) {
-        const foodOption = createFoodOption(food);
-        foodSelect.appendChild(foodOption);
-    });
-
-    exercicios.forEach(function(exercise) {
-        const exerciseOption = createExerciseOption(exercise);
-        exerciseSelect.appendChild(exerciseOption);
-    });
-
-    document.getElementById('add-food').addEventListener('click', addFoodToList);
-    document.getElementById('add-exercise').addEventListener('click', addExerciseToList);
-
-    imcForm.addEventListener('submit', function(event) {
+    document.getElementById('imc-form').addEventListener('submit', function(event) {
         event.preventDefault();
-
         const weight = parseFloat(document.getElementById('weight').value);
         const height = parseFloat(document.getElementById('height').value);
+        if (weight && height) {
+            const imc = weight / (height * height);
+            let category = '';
 
-        if (weight > 0 && height > 0) {
-            const imc = (weight / (height * height)).toFixed(2);
-            resultSpan.textContent = imc;
-
-            let category;
             if (imc < 18.5) {
-                category = "Abaixo do peso";
+                category = 'Abaixo do peso';
             } else if (imc >= 18.5 && imc < 24.9) {
-                category = "Peso normal";
+                category = 'Peso normal';
             } else if (imc >= 25 && imc < 29.9) {
-                category = "Sobrepeso";
+                category = 'Sobrepeso';
             } else {
-                category = "Obesidade";
+                category = 'Obesidade';
             }
 
-            categoryParagraph.textContent = `Categoria: ${category}`;
-        } else {
-            alert("Por favor, insira valores válidos de peso e altura.");
+            document.getElementById('result').textContent = imc.toFixed(2);
+            document.getElementById('category').textContent = category;
         }
     });
+
+    updateFoodOptions();
+    updateExerciseOptions();
 });

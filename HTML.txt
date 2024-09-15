@@ -33,26 +33,24 @@
         <h2>Calculadora de Calorias</h2>
         <form id="calories-form">
             <label for="food">Alimento:</label>
-            <select id="food" required>
-                
-            </select>
+            <select id="food" required></select>
+
+            <label for="food-quantity">Quantidade (gramas):</label>
+            <input type="number" id="food-quantity" step="1" min="1" required>
 
             <button type="button" id="add-food">Adicionar Alimento</button>
 
-            <div id="food-list">
-                
-            </div>
+            <div id="food-list"></div>
 
             <label for="exercise">Exercício:</label>
-            <select id="exercise" required>
-                
-            </select>
+            <select id="exercise" required></select>
+
+            <label for="exercise-time">Tempo (minutos):</label>
+            <input type="number" id="exercise-time" step="1" min="1" required>
 
             <button type="button" id="add-exercise">Adicionar Exercício</button>
 
-            <div id="exercise-list">
-                
-            </div>
+            <div id="exercise-list"></div>
         </form>
 
         <div id="calories-summary">
