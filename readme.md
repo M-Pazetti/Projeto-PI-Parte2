@@ -1,4 +1,4 @@
-# Projeto PI
+# Projeto PI - https://github.com/M-Pazetti/Projeto-PI-Parte2
 
 <img><img src="img/logoSenac.png" alt="Logo" width="350"/>
 
