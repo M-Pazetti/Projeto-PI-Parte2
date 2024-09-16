@@ -9,7 +9,6 @@
 **Integrantes do grupo:**
 - Filipe André da Fonseca Simões
 - Vinícius Guedes de Barros
-- Pablo Henrique Gomes Barbosa
 - Vitor Hugo Santana Benevides
 - Renata Vieira Gonçalves
 - Marcelo Pazetti
