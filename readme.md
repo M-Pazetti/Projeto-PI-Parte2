@@ -12,5 +12,6 @@
 - Vitor Hugo Santana Benevides
 - Renata Vieira Gonçalves
 - Marcelo Pazetti
+- Caio Granges de Pinho
 
 **TRABALHO PARA APROVAÇÃO EM DISCIPLINA** EAD - ENSINO À DISTÂNCIA - 2024
